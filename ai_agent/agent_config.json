@@ -1,0 +1,11 @@
+{
+  "model_path": "xgboost_flight_delay.json",
+  "check_interval_minutes": 30,
+  "max_retries": 3,
+  "api_timeout": 10,
+  "cache_duration_minutes": 5,
+  "max_monitored_flights": 10,
+  "log_level": "INFO",
+  "log_file": "flight_agent.log",
+  "enable_cache": true
+}

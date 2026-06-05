@@ -1,0 +1,449 @@
+2025-12-24 12:10:48,510 - __main__ - INFO - ================================================================================
+2025-12-24 12:10:48,511 - __main__ - INFO - INITIALIZING FLIGHT DELAY PREDICTION AGENT
+2025-12-24 12:10:48,511 - __main__ - INFO - ================================================================================
+2025-12-24 12:10:48,601 - __main__ - INFO - Configuration: {'model_path': 'xgboost_flight_delay.json', 'check_interval_minutes': 30, 'max_retries': 3, 'api_timeout': 10, 'cache_duration_minutes': 5, 'max_monitored_flights': 10, 'log_level': 'INFO', 'log_file': 'flight_agent.log', 'enable_cache': True}
+2025-12-24 12:10:48,602 - __main__ - INFO - Conversational interface started
+2025-12-24 12:12:38,848 - __main__ - INFO - Starting analysis for flight DL456
+2025-12-24 12:13:40,567 - __main__ - INFO - Graceful shutdown initiated
+2025-12-24 12:16:37,422 - __main__ - INFO - ================================================================================
+2025-12-24 12:16:37,422 - __main__ - INFO - INITIALIZING FLIGHT DELAY PREDICTION AGENT
+2025-12-24 12:16:37,422 - __main__ - INFO - ================================================================================
+2025-12-24 12:16:37,507 - __main__ - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 12:16:37,507 - __main__ - INFO - ✅ Agent initialized successfully
+2025-12-24 12:16:37,508 - __main__ - INFO - Configuration: {'model_path': 'xgboost_flight_delay.json', 'check_interval_minutes': 30, 'max_retries': 3, 'api_timeout': 10, 'cache_duration_minutes': 5, 'max_monitored_flights': 10, 'log_level': 'INFO', 'log_file': 'flight_agent.log', 'enable_cache': True}
+2025-12-24 12:16:37,508 - __main__ - INFO - Conversational interface started
+2025-12-24 12:17:17,655 - __main__ - INFO - Starting analysis for flight DL456
+2025-12-24 12:17:17,655 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for DL456
+2025-12-24 12:17:17,655 - __main__ - ERROR - ❌ Unexpected error: get_flight_data() got an unexpected keyword argument 'timeout'
+Traceback (most recent call last):
+  File "C:\Users\user\Downloads\final_agent\ai_agent\final_ai_agent.py", line 460, in perceive
+    flight_data = get_flight_data(
+        flight_number,
+        timeout=self.config.api_timeout
+    )
+TypeError: get_flight_data() got an unexpected keyword argument 'timeout'
+2025-12-24 12:18:58,141 - __main__ - INFO - Graceful shutdown initiated
+2025-12-24 12:19:05,720 - __main__ - INFO - ================================================================================
+2025-12-24 12:19:05,720 - __main__ - INFO - INITIALIZING FLIGHT DELAY PREDICTION AGENT
+2025-12-24 12:19:05,720 - __main__ - INFO - ================================================================================
+2025-12-24 12:19:05,823 - __main__ - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 12:19:05,823 - __main__ - INFO - ✅ Agent initialized successfully
+2025-12-24 12:19:05,823 - __main__ - INFO - Configuration: {'model_path': 'xgboost_flight_delay.json', 'check_interval_minutes': 30, 'max_retries': 3, 'api_timeout': 10, 'cache_duration_minutes': 5, 'max_monitored_flights': 10, 'log_level': 'INFO', 'log_file': 'flight_agent.log', 'enable_cache': True}
+2025-12-24 12:19:05,824 - __main__ - INFO - Conversational interface started
+2025-12-24 12:19:15,530 - __main__ - INFO - Starting analysis for flight DL456
+2025-12-24 12:19:15,531 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for DL456
+2025-12-24 12:19:20,098 - __main__ - INFO - ✅ Data gathered successfully
+2025-12-24 12:19:20,098 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 12:19:20,131 - __main__ - INFO - ✅ Prediction: DELAYED (prob=93.87%, conf=HIGH)
+2025-12-24 12:19:20,132 - __main__ - INFO - ⚡ [ACT] Generating recommendation
+2025-12-24 12:19:20,133 - __main__ - INFO - Action taken: CRITICAL_ALERT
+2025-12-24 12:19:31,174 - __main__ - INFO - Report generated: 1 predictions, 1 delays predicted
+2025-12-24 12:21:25,145 - __main__ - INFO - User exited
+2025-12-24 12:21:25,145 - __main__ - INFO - Report generated: 1 predictions, 1 delays predicted
+2025-12-24 12:32:12,608 - __main__ - INFO - ================================================================================
+2025-12-24 12:32:12,608 - __main__ - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2025-12-24 12:32:12,608 - __main__ - INFO - ================================================================================
+2025-12-24 12:32:12,670 - __main__ - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 12:32:12,670 - __main__ - INFO - ✅ Agent initialized with recommendation engine
+2025-12-24 12:32:40,630 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for AA100
+2025-12-24 12:32:45,458 - __main__ - INFO - ✅ Data gathered successfully
+2025-12-24 12:32:45,459 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 12:32:45,496 - __main__ - INFO - ✅ Prediction: ON_TIME (prob=2.25%, conf=HIGH)
+2025-12-24 12:32:45,497 - __main__ - INFO - ⚡ [ACT] Generating recommendation
+2025-12-24 12:32:45,499 - __main__ - INFO - Action taken: NO_ACTION_NEEDED
+2025-12-24 12:33:18,369 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for DL456
+2025-12-24 12:33:22,648 - __main__ - INFO - ✅ Data gathered successfully
+2025-12-24 12:33:22,649 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 12:33:22,677 - __main__ - INFO - ✅ Prediction: DELAYED (prob=93.87%, conf=HIGH)
+2025-12-24 12:33:22,678 - __main__ - INFO - ⚡ [ACT] Generating recommendation
+2025-12-24 12:33:22,681 - __main__ - INFO - Action taken: CRITICAL_ALERT
+2025-12-24 12:37:03,420 - __main__ - INFO - ================================================================================
+2025-12-24 12:37:03,420 - __main__ - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2025-12-24 12:37:03,420 - __main__ - INFO - ================================================================================
+2025-12-24 12:37:03,499 - __main__ - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 12:37:03,499 - __main__ - INFO - ✅ Agent initialized with recommendation engine
+2025-12-24 12:37:19,994 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for DL456
+2025-12-24 12:37:24,110 - __main__ - INFO - ✅ Data gathered successfully
+2025-12-24 12:37:24,110 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 12:37:24,149 - __main__ - INFO - ✅ Prediction: DELAYED (prob=93.87%, conf=HIGH)
+2025-12-24 12:37:24,150 - __main__ - INFO - ⚡ [ACT] Generating recommendation
+2025-12-24 12:37:24,151 - __main__ - INFO - Action taken: CRITICAL_ALERT
+2025-12-24 12:37:48,483 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for DL456
+2025-12-24 12:37:48,483 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 12:37:48,500 - __main__ - INFO - ✅ Prediction: DELAYED (prob=93.87%, conf=HIGH)
+2025-12-24 12:37:48,501 - __main__ - INFO - ⚡ [ACT] Generating recommendation
+2025-12-24 12:37:48,501 - __main__ - INFO - Action taken: CRITICAL_ALERT
+2025-12-24 12:38:12,249 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for DL456
+2025-12-24 12:38:12,249 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 12:38:12,266 - __main__ - INFO - ✅ Prediction: DELAYED (prob=93.87%, conf=HIGH)
+2025-12-24 12:38:12,266 - __main__ - INFO - ⚡ [ACT] Generating recommendation
+2025-12-24 12:38:12,267 - __main__ - INFO - Action taken: CRITICAL_ALERT
+2025-12-24 12:38:24,257 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for DL456
+2025-12-24 12:38:24,258 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 12:38:24,274 - __main__ - INFO - ✅ Prediction: DELAYED (prob=93.87%, conf=HIGH)
+2025-12-24 12:40:45,043 - __main__ - INFO - ================================================================================
+2025-12-24 12:40:45,044 - __main__ - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2025-12-24 12:40:45,044 - __main__ - INFO - ================================================================================
+2025-12-24 12:40:45,134 - __main__ - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 12:40:45,135 - __main__ - INFO - ✅ Agent initialized with recommendation engine
+2025-12-24 12:40:59,036 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for DL456
+2025-12-24 12:41:03,756 - __main__ - INFO - ✅ Data gathered successfully
+2025-12-24 12:41:03,756 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 12:41:03,796 - __main__ - INFO - ✅ Prediction: DELAYED (prob=93.87%, conf=HIGH)
+2025-12-24 12:41:03,797 - __main__ - INFO - ⚡ [ACT] Generating recommendation
+2025-12-24 12:41:03,798 - __main__ - INFO - Action taken: CRITICAL_ALERT
+2025-12-24 12:41:23,354 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for DL456
+2025-12-24 12:41:23,354 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 12:41:23,371 - __main__ - INFO - ✅ Prediction: DELAYED (prob=93.87%, conf=HIGH)
+2025-12-24 12:41:23,372 - __main__ - INFO - ⚡ [ACT] Generating recommendation
+2025-12-24 12:41:23,372 - __main__ - INFO - Action taken: CRITICAL_ALERT
+2025-12-24 12:41:39,117 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for DL456
+2025-12-24 12:41:39,117 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 12:41:39,134 - __main__ - INFO - ✅ Prediction: DELAYED (prob=93.87%, conf=HIGH)
+2025-12-24 13:08:23,878 - __main__ - INFO - ================================================================================
+2025-12-24 13:08:23,879 - __main__ - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2025-12-24 13:08:23,879 - __main__ - INFO - ================================================================================
+2025-12-24 13:08:24,101 - __main__ - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 13:08:24,101 - __main__ - INFO - ✅ Agent initialized with recommendation engine
+2025-12-24 13:08:30,633 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for DL456
+2025-12-24 13:08:42,751 - __main__ - INFO - ✅ Data gathered successfully
+2025-12-24 13:08:42,751 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 13:08:42,820 - __main__ - INFO - ✅ Prediction: DELAYED (prob=93.87%, conf=HIGH)
+2025-12-24 13:08:42,820 - __main__ - INFO - ⚡ [ACT] Generating recommendation
+2025-12-24 13:08:42,821 - __main__ - INFO - Action taken: CRITICAL_ALERT
+2025-12-24 13:09:22,443 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for DL456
+2025-12-24 13:09:22,444 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 13:09:22,461 - __main__ - INFO - ✅ Prediction: DELAYED (prob=93.87%, conf=HIGH)
+2025-12-24 13:10:42,951 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for AA100
+2025-12-24 13:10:47,464 - __main__ - INFO - ✅ Data gathered successfully
+2025-12-24 13:10:47,465 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 13:10:47,495 - __main__ - INFO - ✅ Prediction: ON_TIME (prob=2.25%, conf=HIGH)
+2025-12-24 13:10:47,496 - __main__ - INFO - ⚡ [ACT] Generating recommendation
+2025-12-24 13:10:47,497 - __main__ - INFO - Action taken: NO_ACTION_NEEDED
+2025-12-24 13:10:55,834 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for CZ300
+2025-12-24 13:10:56,777 - __main__ - ERROR - ❌ Unexpected error: Invalid flight data structure
+Traceback (most recent call last):
+  File "C:\Users\user\Downloads\final_agent\ai_agent\final_ai_agent.py", line 788, in perceive
+    raise ValueError("Invalid flight data structure")
+ValueError: Invalid flight data structure
+2025-12-24 13:11:23,471 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for AA100
+2025-12-24 13:11:23,471 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 13:11:23,489 - __main__ - INFO - ✅ Prediction: ON_TIME (prob=2.25%, conf=HIGH)
+2025-12-24 20:06:50,086 - __main__ - INFO - ================================================================================
+2025-12-24 20:06:50,090 - __main__ - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2025-12-24 20:06:50,090 - __main__ - INFO - ================================================================================
+2025-12-24 20:06:50,204 - __main__ - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 20:06:50,204 - __main__ - INFO - ✅ Agent initialized with recommendation engine
+2025-12-24 20:06:57,800 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for CZ100
+2025-12-24 20:07:07,873 - __main__ - INFO - ✅ Data gathered successfully
+2025-12-24 20:07:07,873 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 20:07:07,933 - __main__ - INFO - ✅ Prediction: DELAYED (prob=96.25%, conf=HIGH)
+2025-12-24 20:07:07,934 - __main__ - INFO - ⚡ [ACT] Generating recommendation
+2025-12-24 20:07:07,934 - __main__ - INFO - Action taken: CRITICAL_ALERT
+2025-12-24 20:07:28,817 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for CZ100
+2025-12-24 20:07:28,817 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 20:07:28,828 - __main__ - INFO - ✅ Prediction: DELAYED (prob=96.25%, conf=HIGH)
+2025-12-24 20:14:05,609 - __main__ - INFO - ================================================================================
+2025-12-24 20:14:05,609 - __main__ - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2025-12-24 20:14:05,609 - __main__ - INFO - ================================================================================
+2025-12-24 20:14:05,670 - __main__ - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 20:14:05,671 - __main__ - INFO - ✅ Agent initialized with recommendation engine
+2025-12-24 20:14:11,276 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for CZ100
+2025-12-24 20:14:18,860 - __main__ - INFO - ✅ Data gathered successfully
+2025-12-24 20:14:18,861 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 20:14:18,872 - __main__ - INFO - ✅ Prediction: DELAYED (prob=96.25%, conf=HIGH)
+2025-12-24 20:14:18,873 - __main__ - INFO - ⚡ [ACT] Generating recommendation
+2025-12-24 20:14:18,873 - __main__ - INFO - Action taken: CRITICAL_ALERT
+2025-12-24 20:46:53,596 - final_ai_agent - INFO - ================================================================================
+2025-12-24 20:46:53,596 - final_ai_agent - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2025-12-24 20:46:53,596 - final_ai_agent - INFO - ================================================================================
+2025-12-24 20:46:53,633 - final_ai_agent - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 20:46:53,633 - final_ai_agent - INFO - ✅ Agent initialized with recommendation engine
+2025-12-24 20:46:56,364 - final_ai_agent - INFO - ================================================================================
+2025-12-24 20:46:56,364 - final_ai_agent - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2025-12-24 20:46:56,364 - final_ai_agent - INFO - ================================================================================
+2025-12-24 20:46:56,402 - final_ai_agent - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 20:46:56,402 - final_ai_agent - INFO - ✅ Agent initialized with recommendation engine
+2025-12-24 20:47:24,300 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for CZ100
+2025-12-24 20:47:25,090 - final_ai_agent - ERROR - ❌ Unexpected error: ❌ Flight API request failed: 401
+Traceback (most recent call last):
+  File "C:\Users\user\Downloads\ai_project\AI\flight-delay-predictor\ai_agent\final_ai_agent.py", line 785, in perceive
+    flight_data = get_flight_data(flight_number)
+  File "C:\Users\user\Downloads\ai_project\AI\flight-delay-predictor\ai_agent\flight_api.py", line 30, in get_flight_data
+    raise RuntimeError(f"❌ Flight API request failed: {response.status_code}")
+RuntimeError: ❌ Flight API request failed: 401
+2025-12-24 20:47:35,415 - __main__ - INFO - ================================================================================
+2025-12-24 20:47:35,415 - __main__ - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2025-12-24 20:47:35,415 - __main__ - INFO - ================================================================================
+2025-12-24 20:47:35,460 - __main__ - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 20:47:35,460 - __main__ - INFO - ✅ Agent initialized with recommendation engine
+2025-12-24 20:47:39,362 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for CZ100
+2025-12-24 20:47:40,102 - __main__ - ERROR - ❌ Unexpected error: ❌ Flight API request failed: 401
+Traceback (most recent call last):
+  File "C:\Users\user\Downloads\ai_project\AI\flight-delay-predictor\ai_agent\final_ai_agent.py", line 785, in perceive
+    flight_data = get_flight_data(flight_number)
+  File "C:\Users\user\Downloads\ai_project\AI\flight-delay-predictor\ai_agent\flight_api.py", line 30, in get_flight_data
+    raise RuntimeError(f"❌ Flight API request failed: {response.status_code}")
+RuntimeError: ❌ Flight API request failed: 401
+2025-12-24 20:48:20,269 - final_ai_agent - INFO - ================================================================================
+2025-12-24 20:48:20,269 - final_ai_agent - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2025-12-24 20:48:20,269 - final_ai_agent - INFO - ================================================================================
+2025-12-24 20:48:20,315 - final_ai_agent - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 20:48:20,315 - final_ai_agent - INFO - ✅ Agent initialized with recommendation engine
+2025-12-24 20:48:36,157 - __main__ - INFO - ================================================================================
+2025-12-24 20:48:36,157 - __main__ - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2025-12-24 20:48:36,157 - __main__ - INFO - ================================================================================
+2025-12-24 20:48:36,197 - __main__ - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 20:48:36,197 - __main__ - INFO - ✅ Agent initialized with recommendation engine
+2025-12-24 20:48:36,795 - final_ai_agent - INFO - ================================================================================
+2025-12-24 20:48:36,795 - final_ai_agent - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2025-12-24 20:48:36,795 - final_ai_agent - INFO - ================================================================================
+2025-12-24 20:48:36,832 - final_ai_agent - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 20:48:36,832 - final_ai_agent - INFO - ✅ Agent initialized with recommendation engine
+2025-12-24 20:48:39,583 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for CZ100
+2025-12-24 20:48:45,033 - __main__ - INFO - ✅ Data gathered successfully
+2025-12-24 20:48:45,033 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 20:48:45,058 - __main__ - INFO - ✅ Prediction: DELAYED (prob=96.25%, conf=HIGH)
+2025-12-24 20:48:45,059 - __main__ - INFO - ⚡ [ACT] Generating recommendation
+2025-12-24 20:48:45,059 - __main__ - INFO - Action taken: CRITICAL_ALERT
+2025-12-24 20:48:54,543 - final_ai_agent - INFO - ================================================================================
+2025-12-24 20:48:54,543 - final_ai_agent - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2025-12-24 20:48:54,543 - final_ai_agent - INFO - ================================================================================
+2025-12-24 20:48:54,579 - final_ai_agent - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 20:48:54,580 - final_ai_agent - INFO - ✅ Agent initialized with recommendation engine
+2025-12-24 20:48:57,366 - final_ai_agent - INFO - ================================================================================
+2025-12-24 20:48:57,366 - final_ai_agent - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2025-12-24 20:48:57,366 - final_ai_agent - INFO - ================================================================================
+2025-12-24 20:48:57,403 - final_ai_agent - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 20:48:57,403 - final_ai_agent - INFO - ✅ Agent initialized with recommendation engine
+2025-12-24 20:49:12,404 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for CZ100
+2025-12-24 20:49:18,606 - final_ai_agent - INFO - ✅ Data gathered successfully
+2025-12-24 20:49:18,606 - final_ai_agent - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 20:49:18,648 - final_ai_agent - INFO - ✅ Prediction: DELAYED (prob=96.25%, conf=HIGH)
+2025-12-24 20:51:51,618 - __main__ - INFO - ================================================================================
+2025-12-24 20:51:51,618 - __main__ - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2025-12-24 20:51:51,618 - __main__ - INFO - ================================================================================
+2025-12-24 20:51:51,658 - __main__ - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 20:51:51,659 - __main__ - INFO - ✅ Agent initialized with recommendation engine
+2025-12-24 20:51:55,377 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for CZ100
+2025-12-24 20:52:00,832 - __main__ - INFO - ✅ Data gathered successfully
+2025-12-24 20:52:00,833 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 20:52:00,857 - __main__ - INFO - ✅ Prediction: DELAYED (prob=96.25%, conf=HIGH)
+2025-12-24 20:52:00,857 - __main__ - INFO - ⚡ [ACT] Generating recommendation
+2025-12-24 20:52:00,858 - __main__ - INFO - Action taken: CRITICAL_ALERT
+2025-12-24 20:52:11,250 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for CZ100
+2025-12-24 20:52:11,250 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 20:52:11,267 - __main__ - INFO - ✅ Prediction: DELAYED (prob=96.25%, conf=HIGH)
+2025-12-24 20:53:26,945 - final_ai_agent - INFO - ================================================================================
+2025-12-24 20:53:26,945 - final_ai_agent - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2025-12-24 20:53:26,946 - final_ai_agent - INFO - ================================================================================
+2025-12-24 20:53:27,012 - final_ai_agent - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 20:53:27,012 - final_ai_agent - INFO - ✅ Agent initialized with recommendation engine
+2025-12-24 20:53:30,920 - final_ai_agent - INFO - ================================================================================
+2025-12-24 20:53:30,920 - final_ai_agent - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2025-12-24 20:53:30,921 - final_ai_agent - INFO - ================================================================================
+2025-12-24 20:53:30,966 - final_ai_agent - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 20:53:30,967 - final_ai_agent - INFO - ✅ Agent initialized with recommendation engine
+2025-12-24 20:53:46,721 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for CZ100
+2025-12-24 20:53:52,918 - final_ai_agent - INFO - ✅ Data gathered successfully
+2025-12-24 20:53:52,918 - final_ai_agent - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 20:53:52,943 - final_ai_agent - INFO - ✅ Prediction: DELAYED (prob=96.25%, conf=HIGH)
+2025-12-24 20:53:56,298 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for CZ100
+2025-12-24 20:53:56,298 - final_ai_agent - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 20:53:56,320 - final_ai_agent - INFO - ✅ Prediction: DELAYED (prob=96.25%, conf=HIGH)
+2025-12-24 20:54:31,018 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for DL456
+2025-12-24 20:54:34,779 - final_ai_agent - INFO - ✅ Data gathered successfully
+2025-12-24 20:54:34,779 - final_ai_agent - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 20:54:34,813 - final_ai_agent - INFO - ✅ Prediction: DELAYED (prob=93.87%, conf=HIGH)
+2025-12-24 20:54:38,033 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for DL456
+2025-12-24 20:54:38,033 - final_ai_agent - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 20:54:38,047 - final_ai_agent - INFO - ✅ Prediction: DELAYED (prob=93.87%, conf=HIGH)
+2025-12-24 20:58:13,141 - final_ai_agent - INFO - ================================================================================
+2025-12-24 20:58:13,142 - final_ai_agent - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2025-12-24 20:58:13,142 - final_ai_agent - INFO - ================================================================================
+2025-12-24 20:58:13,179 - final_ai_agent - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 20:58:13,179 - final_ai_agent - INFO - ✅ Agent initialized with recommendation engine
+2025-12-24 20:58:15,995 - final_ai_agent - INFO - ================================================================================
+2025-12-24 20:58:15,995 - final_ai_agent - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2025-12-24 20:58:15,995 - final_ai_agent - INFO - ================================================================================
+2025-12-24 20:58:16,033 - final_ai_agent - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2025-12-24 20:58:16,034 - final_ai_agent - INFO - ✅ Agent initialized with recommendation engine
+2025-12-24 20:58:28,215 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for CZ100
+2025-12-24 20:58:34,478 - final_ai_agent - INFO - ✅ Data gathered successfully
+2025-12-24 20:58:34,478 - final_ai_agent - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 20:58:34,543 - final_ai_agent - INFO - ✅ Prediction: DELAYED (prob=96.25%, conf=HIGH)
+2025-12-24 20:59:12,986 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for CZ100
+2025-12-24 20:59:12,986 - final_ai_agent - INFO - 🧠 [REASON] Analyzing with ML model
+2025-12-24 20:59:13,025 - final_ai_agent - INFO - ✅ Prediction: DELAYED (prob=96.25%, conf=HIGH)
+2026-01-06 16:53:05,183 - __main__ - INFO - ================================================================================
+2026-01-06 16:53:05,184 - __main__ - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2026-01-06 16:53:05,184 - __main__ - INFO - ================================================================================
+2026-01-06 16:53:05,259 - __main__ - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2026-01-06 16:53:05,259 - __main__ - INFO - ✅ Agent initialized with recommendation engine
+2026-01-06 16:53:09,746 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for AZ100
+2026-01-06 16:53:10,384 - __main__ - ERROR - ❌ Unexpected error: Invalid flight data structure
+Traceback (most recent call last):
+  File "C:\Users\user\Downloads\flight-delay-predictor\flight-delay-predictor\ai_agent\final_ai_agent.py", line 788, in perceive
+    raise ValueError("Invalid flight data structure")
+ValueError: Invalid flight data structure
+2026-01-06 17:04:12,510 - __main__ - INFO - ================================================================================
+2026-01-06 17:04:12,510 - __main__ - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2026-01-06 17:04:12,510 - __main__ - INFO - ================================================================================
+2026-01-06 17:04:12,560 - __main__ - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2026-01-06 17:04:12,560 - __main__ - INFO - ✅ Agent initialized with recommendation engine
+2026-01-06 17:04:24,746 - __main__ - INFO - ================================================================================
+2026-01-06 17:04:24,746 - __main__ - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2026-01-06 17:04:24,746 - __main__ - INFO - ================================================================================
+2026-01-06 17:04:24,826 - __main__ - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2026-01-06 17:04:24,827 - __main__ - INFO - ✅ Agent initialized with recommendation engine
+2026-01-06 17:04:39,616 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for AZ100
+2026-01-06 17:04:40,216 - __main__ - ERROR - ❌ Unexpected error: Invalid flight data structure
+Traceback (most recent call last):
+  File "C:\Users\user\Downloads\flight-delay-predictor\flight-delay-predictor\ai_agent\final_ai_agent.py", line 788, in perceive
+    raise ValueError("Invalid flight data structure")
+ValueError: Invalid flight data structure
+2026-01-06 17:04:49,105 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for DL100
+2026-01-06 17:04:52,021 - __main__ - INFO - ✅ Data gathered successfully
+2026-01-06 17:04:52,021 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2026-01-06 17:04:52,077 - __main__ - INFO - ✅ Prediction: ON_TIME (prob=0.01%, conf=HIGH)
+2026-01-06 17:04:52,077 - __main__ - INFO - ⚡ [ACT] Generating recommendation
+2026-01-06 17:04:52,078 - __main__ - INFO - Action taken: NO_ACTION_NEEDED
+2026-01-06 17:05:28,778 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for DL100
+2026-01-06 17:05:28,778 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2026-01-06 17:05:28,788 - __main__ - INFO - ✅ Prediction: ON_TIME (prob=0.01%, conf=HIGH)
+2026-01-06 17:05:50,899 - final_ai_agent - INFO - ================================================================================
+2026-01-06 17:05:50,900 - final_ai_agent - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2026-01-06 17:05:50,900 - final_ai_agent - INFO - ================================================================================
+2026-01-06 17:05:50,961 - final_ai_agent - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2026-01-06 17:05:50,961 - final_ai_agent - INFO - ✅ Agent initialized with recommendation engine
+2026-01-06 17:05:54,288 - final_ai_agent - INFO - ================================================================================
+2026-01-06 17:05:54,288 - final_ai_agent - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2026-01-06 17:05:54,289 - final_ai_agent - INFO - ================================================================================
+2026-01-06 17:05:54,358 - final_ai_agent - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2026-01-06 17:05:54,359 - final_ai_agent - INFO - ✅ Agent initialized with recommendation engine
+2026-01-06 17:10:29,113 - __main__ - INFO - ================================================================================
+2026-01-06 17:10:29,113 - __main__ - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2026-01-06 17:10:29,114 - __main__ - INFO - ================================================================================
+2026-01-06 17:10:29,175 - __main__ - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2026-01-06 17:10:29,175 - __main__ - INFO - ✅ Agent initialized with recommendation engine
+2026-01-06 17:10:32,535 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for DL100
+2026-01-06 17:10:34,398 - __main__ - INFO - ✅ Data gathered successfully
+2026-01-06 17:10:34,398 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2026-01-06 17:10:34,416 - __main__ - INFO - ✅ Prediction: ON_TIME (prob=0.01%, conf=HIGH)
+2026-01-06 17:10:34,416 - __main__ - INFO - ⚡ [ACT] Generating recommendation
+2026-01-06 17:10:34,417 - __main__ - INFO - Action taken: NO_ACTION_NEEDED
+2026-01-06 17:15:46,622 - final_ai_agent - INFO - ================================================================================
+2026-01-06 17:15:46,623 - final_ai_agent - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2026-01-06 17:15:46,623 - final_ai_agent - INFO - ================================================================================
+2026-01-06 17:15:46,709 - final_ai_agent - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2026-01-06 17:15:46,709 - final_ai_agent - INFO - ✅ Agent initialized with recommendation engine
+2026-01-06 17:16:30,389 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for DL100
+2026-01-06 17:16:32,952 - final_ai_agent - INFO - ✅ Data gathered successfully
+2026-01-06 17:16:32,953 - final_ai_agent - INFO - 🧠 [REASON] Analyzing with ML model
+2026-01-06 17:16:32,980 - final_ai_agent - INFO - ✅ Prediction: ON_TIME (prob=0.01%, conf=HIGH)
+2026-01-06 17:17:31,426 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for DL123
+2026-01-06 17:17:31,987 - final_ai_agent - ERROR - ❌ Unexpected error: Invalid flight data structure
+Traceback (most recent call last):
+  File "C:\Users\user\Downloads\flight-delay-predictor\flight-delay-predictor\ai_agent\final_ai_agent.py", line 788, in perceive
+    raise ValueError("Invalid flight data structure")
+ValueError: Invalid flight data structure
+2026-01-06 17:17:37,957 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for CZ100
+2026-01-06 17:17:43,224 - final_ai_agent - INFO - ✅ Data gathered successfully
+2026-01-06 17:17:43,224 - final_ai_agent - INFO - 🧠 [REASON] Analyzing with ML model
+2026-01-06 17:17:43,247 - final_ai_agent - INFO - ✅ Prediction: DELAYED (prob=91.77%, conf=HIGH)
+2026-01-06 17:17:45,661 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for CZ100
+2026-01-06 17:17:45,661 - final_ai_agent - INFO - 🧠 [REASON] Analyzing with ML model
+2026-01-06 17:17:45,686 - final_ai_agent - INFO - ✅ Prediction: DELAYED (prob=91.77%, conf=HIGH)
+2026-01-06 17:18:17,621 - __main__ - INFO - ================================================================================
+2026-01-06 17:18:17,621 - __main__ - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2026-01-06 17:18:17,621 - __main__ - INFO - ================================================================================
+2026-01-06 17:18:17,680 - __main__ - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2026-01-06 17:18:17,680 - __main__ - INFO - ✅ Agent initialized with recommendation engine
+2026-01-06 17:18:20,527 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for CZ100
+2026-01-06 17:18:24,538 - __main__ - INFO - ✅ Data gathered successfully
+2026-01-06 17:18:24,538 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2026-01-06 17:18:24,549 - __main__ - INFO - ✅ Prediction: DELAYED (prob=91.77%, conf=HIGH)
+2026-01-06 17:18:24,549 - __main__ - INFO - ⚡ [ACT] Generating recommendation
+2026-01-06 17:18:24,550 - __main__ - INFO - Action taken: CRITICAL_ALERT
+2026-01-06 23:13:28,650 - __main__ - INFO - ================================================================================
+2026-01-06 23:13:28,651 - __main__ - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2026-01-06 23:13:28,651 - __main__ - INFO - ================================================================================
+2026-01-06 23:13:28,848 - __main__ - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2026-01-06 23:13:28,848 - __main__ - INFO - ✅ Agent initialized with recommendation engine
+2026-01-06 23:13:57,260 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for AA200
+2026-01-06 23:13:58,432 - __main__ - ERROR - ❌ Unexpected error: Invalid flight data structure
+Traceback (most recent call last):
+  File "C:\Users\user\Downloads\flight-delay-predictor\flight-delay-predictor\ai_agent\final_ai_agent.py", line 788, in perceive
+    raise ValueError("Invalid flight data structure")
+ValueError: Invalid flight data structure
+2026-01-06 23:14:13,078 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for DL100
+2026-01-06 23:14:22,811 - __main__ - INFO - ✅ Data gathered successfully
+2026-01-06 23:14:22,812 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2026-01-06 23:14:23,102 - __main__ - INFO - ✅ Prediction: ON_TIME (prob=0.01%, conf=HIGH)
+2026-01-06 23:14:23,103 - __main__ - INFO - ⚡ [ACT] Generating recommendation
+2026-01-06 23:14:23,104 - __main__ - INFO - Action taken: NO_ACTION_NEEDED
+2026-01-06 23:14:32,530 - __main__ - INFO - 👁️  [PERCEIVE] Gathering data for UA500
+2026-01-06 23:14:48,133 - __main__ - INFO - ✅ Data gathered successfully
+2026-01-06 23:14:48,133 - __main__ - INFO - 🧠 [REASON] Analyzing with ML model
+2026-01-06 23:14:48,175 - __main__ - INFO - ✅ Prediction: ON_TIME (prob=23.30%, conf=MODERATE)
+2026-01-06 23:14:48,175 - __main__ - INFO - ⚡ [ACT] Generating recommendation
+2026-01-06 23:14:48,176 - __main__ - INFO - Action taken: NO_ACTION_NEEDED
+2026-01-06 23:15:41,453 - final_ai_agent - INFO - ================================================================================
+2026-01-06 23:15:41,454 - final_ai_agent - INFO - INITIALIZING ENHANCED FLIGHT DELAY PREDICTION AGENT
+2026-01-06 23:15:41,454 - final_ai_agent - INFO - ================================================================================
+2026-01-06 23:15:41,541 - final_ai_agent - INFO - ✅ Model loaded from xgboost_flight_delay.json
+2026-01-06 23:15:41,542 - final_ai_agent - INFO - ✅ Agent initialized with recommendation engine
+2026-01-06 23:16:48,173 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for UA500
+2026-01-06 23:16:56,563 - final_ai_agent - INFO - ✅ Data gathered successfully
+2026-01-06 23:16:56,564 - final_ai_agent - INFO - 🧠 [REASON] Analyzing with ML model
+2026-01-06 23:16:56,625 - final_ai_agent - INFO - ✅ Prediction: ON_TIME (prob=23.30%, conf=MODERATE)
+2026-01-06 23:22:08,760 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for UA500
+2026-01-06 23:22:14,603 - final_ai_agent - INFO - ✅ Data gathered successfully
+2026-01-06 23:22:14,603 - final_ai_agent - INFO - 🧠 [REASON] Analyzing with ML model
+2026-01-06 23:22:14,656 - final_ai_agent - INFO - ✅ Prediction: ON_TIME (prob=23.30%, conf=MODERATE)
+2026-01-06 23:33:40,035 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for DL123
+2026-01-06 23:33:40,620 - final_ai_agent - ERROR - ❌ Unexpected error: Invalid flight data structure
+Traceback (most recent call last):
+  File "C:\Users\user\Downloads\flight-delay-predictor\flight-delay-predictor\ai_agent\final_ai_agent.py", line 788, in perceive
+    raise ValueError("Invalid flight data structure")
+ValueError: Invalid flight data structure
+2026-01-06 23:33:51,170 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for AZ100
+2026-01-06 23:33:51,538 - final_ai_agent - ERROR - ❌ Unexpected error: Invalid flight data structure
+Traceback (most recent call last):
+  File "C:\Users\user\Downloads\flight-delay-predictor\flight-delay-predictor\ai_agent\final_ai_agent.py", line 788, in perceive
+    raise ValueError("Invalid flight data structure")
+ValueError: Invalid flight data structure
+2026-01-06 23:33:59,865 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for DL100
+2026-01-06 23:34:04,962 - final_ai_agent - INFO - ✅ Data gathered successfully
+2026-01-06 23:34:04,963 - final_ai_agent - INFO - 🧠 [REASON] Analyzing with ML model
+2026-01-06 23:34:05,052 - final_ai_agent - INFO - ✅ Prediction: ON_TIME (prob=0.01%, conf=HIGH)
+2026-01-06 23:34:13,674 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for CZ100
+2026-01-06 23:34:23,036 - final_ai_agent - INFO - ✅ Data gathered successfully
+2026-01-06 23:34:23,036 - final_ai_agent - INFO - 🧠 [REASON] Analyzing with ML model
+2026-01-06 23:34:23,112 - final_ai_agent - INFO - ✅ Prediction: DELAYED (prob=96.25%, conf=HIGH)
+2026-01-06 23:34:34,850 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for CZ100
+2026-01-06 23:34:34,850 - final_ai_agent - INFO - 🧠 [REASON] Analyzing with ML model
+2026-01-06 23:34:34,883 - final_ai_agent - INFO - ✅ Prediction: DELAYED (prob=96.25%, conf=HIGH)
+2026-01-06 23:49:40,303 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for AA245
+2026-01-06 23:49:40,971 - final_ai_agent - ERROR - ❌ Unexpected error: Invalid flight data structure
+Traceback (most recent call last):
+  File "C:\Users\user\Downloads\flight-delay-predictor\flight-delay-predictor\ai_agent\final_ai_agent.py", line 788, in perceive
+    raise ValueError("Invalid flight data structure")
+ValueError: Invalid flight data structure
+2026-01-06 23:49:54,647 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for WN100
+2026-01-06 23:50:00,874 - final_ai_agent - INFO - ✅ Data gathered successfully
+2026-01-06 23:50:00,874 - final_ai_agent - INFO - 🧠 [REASON] Analyzing with ML model
+2026-01-06 23:50:00,903 - final_ai_agent - INFO - ✅ Prediction: ON_TIME (prob=0.00%, conf=HIGH)
+2026-01-06 23:50:45,075 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for WN100
+2026-01-06 23:50:45,075 - final_ai_agent - INFO - 🧠 [REASON] Analyzing with ML model
+2026-01-06 23:50:45,123 - final_ai_agent - INFO - ✅ Prediction: ON_TIME (prob=0.00%, conf=HIGH)
+2026-01-06 23:51:01,153 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for DL2000
+2026-01-06 23:51:01,813 - final_ai_agent - ERROR - ❌ Unexpected error: Invalid flight data structure
+Traceback (most recent call last):
+  File "C:\Users\user\Downloads\flight-delay-predictor\flight-delay-predictor\ai_agent\final_ai_agent.py", line 788, in perceive
+    raise ValueError("Invalid flight data structure")
+ValueError: Invalid flight data structure
+2026-01-06 23:51:05,656 - final_ai_agent - INFO - 👁️  [PERCEIVE] Gathering data for DL200
+2026-01-06 23:51:10,907 - final_ai_agent - INFO - ✅ Data gathered successfully
+2026-01-06 23:51:10,908 - final_ai_agent - INFO - 🧠 [REASON] Analyzing with ML model
+2026-01-06 23:51:10,979 - final_ai_agent - INFO - ✅ Prediction: ON_TIME (prob=8.69%, conf=HIGH)
