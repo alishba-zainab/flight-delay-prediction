@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+# Flight Delay Prediction System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Flight Delay Prediction System is an AI-powered web application that predicts whether a flight is likely to be delayed before departure. The system analyzes historical flight records along with real-time weather conditions to provide accurate delay predictions, estimated delay duration, and helpful recommendations for passengers.
 
-In the project directory, you can run:
+This project was developed as part of the Artificial Intelligence course.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Predicts flight delays before departure
+- Estimates delay duration
+- Retrieves real-time weather information
+- Explains the factors affecting predictions
+- Provides travel recommendations for passengers
+- Interactive React-based user interface
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technology Stack
 
-### `npm test`
+### Frontend
+- React.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend
+- Flask (Python)
 
-### `npm run build`
+### Machine Learning
+- XGBoost
+- CatBoost
+- Random Forest
+- LightGBM
+- Artificial Neural Network (ANN)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Libraries
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
+- XGBoost
+- CatBoost
+- LightGBM
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### API
+- OpenWeatherMap API
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
 
-### `npm run eject`
+```
+FlightDelayPrediction/
+│
+├── frontend/
+├── backend/
+├── models/
+├── dataset/
+├── feature_engineering.py
+├── get_weather.py
+├── app.py
+├── requirements.txt
+└── README.md
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+git clone <repository-url>
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Navigate to the project folder.
 
-## Learn More
+```bash
+cd FlightDelayPrediction
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Install the required Python packages.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+pip install -r requirements.txt
+```
 
-### Code Splitting
+4. Configure your OpenWeatherMap API key.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Start the backend server.
 
-### Analyzing the Bundle Size
+```bash
+python app.py
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+6. Start the frontend.
 
-### Making a Progressive Web App
+```bash
+npm install
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## How It Works
 
-### Advanced Configuration
+1. The user enters a flight number.
+2. Historical flight information is retrieved.
+3. Current weather data is fetched using the weather API.
+4. Data is cleaned and transformed into model features.
+5. The trained machine learning model predicts whether the flight will be delayed.
+6. The prediction, estimated delay, explanation, and recommendations are displayed to the user.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Future Enhancements
 
-### Deployment
+- Support for more airlines
+- Live flight tracking
+- Mobile application
+- Improved prediction accuracy
+- Additional weather parameters
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contributors
 
-### `npm run build` fails to minify
+- Alishba Zainab
+- Fatima Kashif
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+This project was developed for academic purposes.
